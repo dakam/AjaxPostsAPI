@@ -25,10 +25,10 @@ $(function() {
 
             $("#uinfo").empty();
 
-            let userinterface = `<div> id <span>${data.id} </span></div> <br/><p> name <span>${data.name} </span>  </p><br/>
+            let userinterface = `<div> id <span>${data.id} </span></div> <br/><p> Name: <span>${data.name} </span>  </p><br/>
             <p> Username: <span>${data.username} </span>  </p> <br/>
             <p> Email: <span>${data.email} </span>  </p> <br/>
-            <p> Name: <span>${data.address.street} </span>  </p>`;
+            <p> Address: <span>${data.address.street} </span>  </p>`;
             $("#uinfo").append(userinterface);
 
             getPosts(uid);
